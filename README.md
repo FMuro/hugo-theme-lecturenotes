@@ -1,13 +1,15 @@
-# Hugo docDock Theme
+# Hugo LectureNotes Theme
 
-This repository contains a theme for [Hugo](https://gohugo.io/), based on great [Matcornic Learn theme](https://github.com/matcornic/hugo-theme-learn/).
+This repository contains a theme for [Hugo](https://gohugo.io/) designed for my math lectures. It is based on the excellent [Valere JEANTET docDock theme](https://github.com/vjeantet/hugo-theme-docdock), which is in turn based on the great [Matcornic Learn theme](https://github.com/matcornic/hugo-theme-learn/). So far, it's just an October 2017 version of the docDock theme but, as time allows, I'll adapt it more to my needs.
 
-Visit the [theme documentation](http://docdock.netlify.com/) to see what is going on. It is actually built with this theme.
+This theme is built with an example site containing documentation.
 
 # Main features
 
 - Search
-- **Unlimited menu levels**
+- MathJax support
+- Spanish accents support
+- Unlimited menu levels
 - RevealJS presentation from markdown (embededed or fullscreen page)
 - Attachments files
 - List child pages
@@ -18,9 +20,6 @@ Visit the [theme documentation](http://docdock.netlify.com/) to see what is goin
 - Image resizing, shadow...
 - Customizable look and feel
 
-
-![Overview](https://github.com/vjeantet/hugo-theme-docdock/raw/master/images/tn.png)
-
 ## Installation
 
 Check that your Hugo version is minimum `0.25` with `hugo version`. We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.
@@ -28,8 +27,8 @@ Check that your Hugo version is minimum `0.25` with `hugo version`. We assume th
 To start real work:
 
 1. Initialize Hugo
-2. Install DocDock theme
-3. Configure DocDock and Hugo
+2. Install LectureNotes theme
+3. Configure LectureNotes and Hugo
 
 ### Prepare empty Hugo site
 
@@ -42,7 +41,7 @@ AFTER that, initialize this as git directory where to track further changes
 $ git init
 ```
 
-Next, there are at least three ways to install DocDock (first recommended):
+Next, there are at least three ways to install LectureNotes (first recommended):
 
 1. **As git submodule**
 2. As git clone
@@ -50,15 +49,15 @@ Next, there are at least three ways to install DocDock (first recommended):
 
 Navigate to your themes folder in your Hugo site and use perform one of following scenarios.
 
-### 1. Install DocDock as git submodule
-DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get `theme not found` issues. Same applies when building site on remote server trough SSH.
+### 1. Install LectureNotes as git submodule
+LectureNotes will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get `theme not found` issues. Same applies when building site on remote server trough SSH.
 
 If submodule is no-go, use 3rd option.
 
 On your root of Hugo execute:
 
 ```
-$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
+$ git submodule add https://github.com/vjeantet/hugo-theme-lecturenotes.git themes/lecturenotes
 ```
 Next initialize submodule for parent git repo:
 
@@ -69,13 +68,13 @@ $ git submodule update
 
 Now you are ready to add content and customize looks. Do not change any file inside theme directory.
 
-If you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.
+If you want to freeze changes to LectureNotes theme itself and use still submodules, fork private copy of LectureNotes and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.
 
-### 2. Install DocDock simply as git clone
+### 2. Install LectureNotes simply as git clone
 This method results that files are checked out locally, but won't be visible from parent git repo. Probably you will build site locally with `hugo` command and use result from `public/` on your own.
 
 ```
-$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
+$ git clone https://github.com/vjeantet/hugo-theme-lecturenotes.git themes/lecturenotes
 ```
 
 
