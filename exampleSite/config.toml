@@ -2,12 +2,12 @@ baseURL = "/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
-title = "Docdock"
-theme = "hugo-theme-docdock"
+title = "LectureNotes"
+theme = "hugo-theme-lecturenotes"
 themesdir = "../.."
 
 [params]
-editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+editURL = "https://gitlab.com/edarfoc/hugo-theme-lecturenotes/edit/master/exampleSite/content/"
 noHomeIcon = false # default is false
 noSearch = false # default is false
 showVisitedLinks = true # default is false
@@ -23,7 +23,7 @@ home = [ "HTML", "RSS", "JSON"]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/vjeantet/hugo-theme-docdock"
+url = "https://gitlab.com/edarfoc/hugo-theme-lecturenotes"
 weight = 10
 
 [[menu.shortcuts]]
