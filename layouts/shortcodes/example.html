@@ -1,0 +1,4 @@
+<div class="panel panel-default">
+	{{ with .Get "name" }}<div class="panel-heading">{{ htmlUnescape . | markdownify}}</div>{{end}}
+	<div class="panel-body">{{.Inner}}</div>
+</div>
