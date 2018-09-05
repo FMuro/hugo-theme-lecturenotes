@@ -6,7 +6,7 @@ hidden=true
 
 theme = "league"
 [revealOptions]
-transition= 'concave'
+transition= "concave"
 controls= true
 progress= true
 history= false
