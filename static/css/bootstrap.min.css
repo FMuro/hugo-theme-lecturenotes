@@ -1526,7 +1526,10 @@ a.badge:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .panel-body {
-  padding: 15px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
 }
 .panel-heading {
   padding: 10px 15px;
