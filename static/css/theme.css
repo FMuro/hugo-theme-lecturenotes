@@ -1488,6 +1488,4 @@ pre .copy-to-clipboard:hover {
     color: black !important;
     background: white !important; }
   #body {
-    margin-left: 0px; } 
-  .panel, .alert {
-	page-break-inside: avoid; } }
+    margin-left: 0px; } }
