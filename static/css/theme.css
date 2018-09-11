@@ -1490,7 +1490,4 @@ pre .copy-to-clipboard:hover {
   #body {
     margin-left: 0px; } 
   .panel, .alert {
-	page-break-inside: avoid; }
-  .collapse {
-    display: block !important;
-    height: auto !important; } }
+	page-break-inside: avoid; } }
