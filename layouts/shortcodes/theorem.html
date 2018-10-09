@@ -1,4 +1,4 @@
 <div class="panel panel-success">
-	<div class="panel-heading">Teorema {{ with .Get "name" }}({{ htmlUnescape . | markdownify}}){{end}}</div>
+	<div class="panel-heading" id="{{ .Get "label" }}">Teorema {{ with .Get "name" }}({{ htmlUnescape . | markdownify}}){{end}}</div>
 	<div class="panel-body">{{.Inner}}</div>
 </div>

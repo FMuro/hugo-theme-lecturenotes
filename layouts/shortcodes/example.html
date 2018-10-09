@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default"  id="{{ .Get "label" }}">
 	{{ with .Get "name" }}<div class="panel-heading">{{ htmlUnescape . | markdownify}}</div>{{end}}
 	<div class="panel-body">{{.Inner}}</div>
 </div>
