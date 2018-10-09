@@ -267,6 +267,10 @@ body {
   opacity: 1;
 }
 
+.btn-anchor-link:active {
+  color: red;
+}
+
 /* anchors */
 .anchor {
   color: #2053AB;
