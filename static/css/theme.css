@@ -259,6 +259,14 @@ body {
   -ms-transition: all 0.35s !important;
   transition: all 0.35s !important; }
 
+.btn-anchor-link {
+  opacity: 0;
+}
+
+.btn-anchor-link:hover {
+  opacity: 1;
+}
+
 /* anchors */
 .anchor {
   color: #2053AB;

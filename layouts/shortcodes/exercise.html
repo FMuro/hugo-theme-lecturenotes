@@ -1,1 +1,1 @@
-<div class="alert alert-danger" role="alert" id="{{ .Get "label" }}">{{.Inner}}</div>
+<div class="alert alert-danger" role="alert"{{ with .Get "label" }} id="{{ . }}"{{ end }}>{{.Inner}}</div>
