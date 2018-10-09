@@ -1,4 +1,4 @@
 <div class="panel panel-info">
-	<div class="panel-heading"{{ with .Get "label" }} id="{{ . }}"{{ end }}>Proposición{{ with .Get "label" }}<span class="clipboard btn btn-anchor-link" data-clipboard-text="{{ $.Page.URL | absURL }}#{{ . }}"><i class="fa fa-link"></i></span>{{ end }}</div>
+	<div class="panel-heading"{{ with .Get "label" }} id="{{ . }}"{{ end }}>Proposición{{ with .Get "label" }} <span class="clipboard btn-anchor-link" data-clipboard-text="{{ $.Page.URL | absURL }}#{{ . }}"><i class="fa fa-link"></i></span>{{ end }}</div>
 	<div class="panel-body">{{.Inner}}</div>
 </div>

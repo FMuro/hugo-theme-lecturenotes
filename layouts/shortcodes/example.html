@@ -1,4 +1,4 @@
 <div class="panel panel-default"{{ with .Get "label" }} id="{{ . }}"{{ end }}>
-	{{ with .Get "name" }}<div class="panel-heading">{{ htmlUnescape . | markdownify}}</div>{{end}}
-	<div class="panel-body">{{.Inner}}{{ with .Get "label" }}<span class="clipboard btn btn-anchor-link" data-clipboard-text="{{ $.Page.URL | absURL }}#{{ . }}"><i class="fa fa-link"></i></span>{{ end }}</div>
+	<div class="panel-heading">{{ htmlUnescape .Get "name" | markdownify}} {{ with .Get "label" }} <span class="clipboard btn-anchor-link" data-clipboard-text="{{ $.Page.URL | absURL }}#{{ . }}"><i class="fa fa-link"></i></span>{{ end }}</div>
+	<div class="panel-body">{{.Inner}}</div>
 </div>
