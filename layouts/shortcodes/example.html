@@ -1,4 +1,4 @@
 <div class="panel panel-default"{{ with .Get "label" }} id="{{ . }}"{{ end }}>
-	<div class="panel-heading">{{ .Get "name" }}{{ with .Get "label" }} <span class="clipboard btn-anchor-link tooltipped tooltipped-s" aria-label="{{ . }}" data-clipboard-text="{{ $.Page.URL | absURL }}#{{ . }}"><i class="fa fa-link"></i></span>{{ end }}</div>
+	<div class="panel-heading">{{ .Get "name" }}{{ with .Get "label" }} <span class="clipboard btn-anchor-link tooltipped tooltipped-s" aria-label="{{ . }}" data-clipboard-text="{{ $.Page.RelPermalink | absURL }}#{{ . }}"><i class="fa fa-link"></i></span>{{ end }}</div>
 	<div class="panel-body">{{.Inner}}</div>
 </div>
