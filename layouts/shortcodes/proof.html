@@ -1,12 +1,12 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 <div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(0,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fa fa-chevron-down' : 'fa fa-chevron-right';});});">
         <i style="font-size:x-small;" class="fa fa-chevron-right"></i>
         <span>
         Prueba
         </span>
     </div>
-    <div class="expand-content" style="display: none;">
+    <div class="expand-content" >
 {{.Inner | safeHTML}}<div align="right"><i class="fa fa-square-o"></i></div> 
     </div>
 </div>
